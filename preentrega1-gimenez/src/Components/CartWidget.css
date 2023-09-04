@@ -1,0 +1,14 @@
+.carrito {
+    padding-right: 2rem;  
+    font-size: 1.5em;
+    color: white;
+}
+
+span{
+    font-size: 0.7em;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    top: 4px; left: -2px;
+    text-shadow: 0px 0px 25px white;
+}
