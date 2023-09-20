@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "marca": "Audi",
+    "modelo": "A5",
+    "imagen": "https://cdn.motor1.com/images/mgl/7Zmrpq/s3/garage-motor1-audi-a5-sportback-1.jpg",
+    "precio": 80400,
+    "stock": 3,
+    "año": 2023,
+    "gama": "alta"
+  },
+  {
+    "id": 2,
+    "marca": "Audi",
+    "modelo": "A3",
+    "imagen": "https://cdn.motor1.com/images/mgl/my0eo/s3/nuevo-audi-a3-asi-es-la-cuarta-generacion.jpg",
+    "precio": 55500,
+    "stock": 3,
+    "año": 2023,
+    "gama": "alta"
+  },
+  {
+    "id": 3,
+    "marca": "Audi",
+    "modelo": "TT",
+    "imagen": "https://cdn.motor1.com/images/mgl/rK33qx/s3/audi-tt-memorial-edition.jpg",
+    "precio": 25000,
+    "stock": 2,
+    "año": 2013,
+    "gama": "alta"
+  },
+  {
+    "id": 4,
+    "marca": "BMW",
+    "modelo": "Serie 6",
+    "imagen": "https://hips.hearstapps.com/es.h-cdn.co/cades/contenidos/47924/bmw-serie-6-gt-m-performance-10.jpg",
+    "precio": 67990,
+    "stock": 1,
+    "año": 2016,
+    "gama": "alta"
+  },
+  {
+    "id": 5,
+    "marca": "BMW",
+    "modelo": "Z4",
+    "imagen": "https://w7.pngwing.com/pngs/111/264/png-transparent-car-2015-bmw-z4-2016-bmw-z4-sdrive35is-convertible-bmw-z4-performance-car-volkswagen-vehicle.png",
+    "precio": 44000,
+    "stock": 1,
+    "año": 2012,
+    "gama": "alta"
+  },
+  {
+    "id": 6,
+    "marca": "BMW",
+    "modelo": "X6",
+    "imagen": "https://w7.pngwing.com/pngs/143/731/png-transparent-blue-bmw-sedan-2018-bmw-x6-m-2017-bmw-x6-2018-bmw-x6-xdrive35i-2018-bmw-x6-sdrive35i-car-bmw-compact-car-performance-car-automatic-transmission.png",
+    "precio": 82000,
+    "stock": 3,
+    "año": 2017,
+    "gama": "alta"
+  },
+  {
+    "id": 7,
+    "marca": "Chevrolet",
+    "modelo": "Camaro",
+    "imagen": "https://w7.pngwing.com/pngs/1007/297/png-transparent-yellow-chevrolet-camaro-coupe-2013-chevrolet-camaro-2018-chevrolet-camaro-2014-chevrolet-camaro-car-yellow-camaro-compact-car-performance-car-vehicle.png",
+    "precio": 70000,
+    "stock": 5,
+    "año": 2015,
+    "gama": "alta"
+  },
+  {
+    "id": 8,
+    "marca": "Chevrolet",
+    "modelo": "Cruze",
+    "imagen": "https://w7.pngwing.com/pngs/385/448/png-transparent-2017-chevrolet-cruze-car-2018-chevrolet-cruze-2016-chevrolet-cruze-limited-chevrolet.png",
+    "precio": 20000,
+    "stock": 7,
+    "año": 2020,
+    "gama": "media"
+  },
+  {
+    "id": 9,
+    "marca": "Chevrolet",
+    "modelo": "Captiva",
+    "imagen": "https://w7.pngwing.com/pngs/1019/851/png-transparent-chevrolet-captiva-general-motors-opel-antara-car-chevrolet-compact-car-vehicle-maintenance.png",
+    "precio": 20000,
+    "stock": 4,
+    "año": 2017,
+    "gama": "media"
+  },
+  {
+    "id": 10,
+    "marca": "Citroen",
+    "modelo": "C4",
+    "imagen": "https://e7.pngegg.com/pngimages/816/39/png-clipart-citroen-c4-picasso-car-citroen-c4-cactus-dacia-sandero-citroen-compact-car-sedan.png",
+    "precio": 6000,
+    "stock": 8,
+    "año": 2012,
+    "gama": "media"
+  },
+  {
+    "id": 11,
+    "marca": "Honda",
+    "modelo": "CR-V",
+    "imagen": "https://w7.pngwing.com/pngs/478/637/png-transparent-2016-honda-cr-v-2015-honda-cr-v-2012-honda-cr-v-car-tuning-compact-car-car-vehicle.png",
+    "precio": 23000,
+    "stock": 4,
+    "año": 2017,
+    "gama": "media"
+  },
+  {
+    "id": 12,
+    "marca": "Fiat",
+    "modelo": "Cronos",
+    "imagen": "https://w7.pngwing.com/pngs/237/1000/png-transparent-fiat-argo-fiat-cronos-fiat-automobiles-city-car-car-compact-car-sedan-car.png",
+    "precio": 15000,
+    "stock": 13,
+    "año": 2023,
+    "gama": "baja"
+  },
+  {
+    "id": 13,
+    "marca": "Fiat",
+    "modelo": "500",
+    "imagen": "https://w7.pngwing.com/pngs/502/742/png-transparent-2013-fiat-500-2015-fiat-500-2012-fiat-500-2014-fiat-500-fiat-compact-car-car-fiat-500.png",
+    "precio": 25200,
+    "stock": 3,
+    "año": 2023,
+    "gama": "media"
+  },
+  {
+    "id": 14,
+    "marca": "Ford",
+    "modelo": "Focus",
+    "imagen": "https://w7.pngwing.com/pngs/628/780/png-transparent-2015-ford-focus-car-2018-ford-focus-2014-ford-focus-ford-compact-car-sedan-car.png",
+    "precio": 11000,
+    "stock": 4,
+    "año": 2016,
+    "gama": "media"
+  },
+  {
+    "id": 15,
+    "marca": "Ford",
+    "modelo": "Mustang",
+    "imagen": "https://e7.pngegg.com/pngimages/572/943/png-clipart-ford-mustang-ford-mustang.png",
+    "precio": 75000,
+    "stock": 5,
+    "año": 2017,
+    "gama": "alta"
+  }
+]

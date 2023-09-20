@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "marca": "Pirelli",
+    "descripcion": "175/65R14 82T CINTURATO P1",
+    "imagen": "https://neumaticospons.com.ar/wp-content/uploads/2021/06/Cinturato-p1-unitario-1-6.jpg",
+    "precio": "87.376",
+    "stock": 3,
+    "categoria": "cubierta"
+  },
+  {
+    "id": 2,
+    "marca": "Pirelli",
+    "descripcion": "195/55R15 85H FORMULA EVO",
+    "imagen": "https://neumaticospons.com.ar/wp-content/uploads/2021/06/formula20evo20unitario201-1.jpg",
+    "precio": "93.500",
+    "stock": 3,
+    "categoria": "cubierta"
+  },
+  {
+    "id": 3,
+    "marca": "Firestone",
+    "descripcion": "NEUMÁTICO FIRESTONE F-700 175/70R14",
+    "imagen": "https://monzza.com.ar/wp-content/uploads/2021/04/monzza-neumaticos-firestone-automovil-f700-04.jpg",
+    "precio": "75.499",
+    "stock": 2,
+    "categoria": "cubierta"
+  },
+  {
+    "id": 4,
+    "marca": "Firestone",
+    "descripcion": "NEUMÁTICO BRIDGESTONE TURANZA ER30 195/55R15",
+    "imagen": "https://monzza.com.ar/wp-content/uploads/2021/04/monzza-neumaticos-bridgestone-automovil-turanza-er30-01.jpg",
+    "precio": "67.990",
+    "stock": 1,
+    "categoria": "cubierta"
+  },
+  {
+    "id": 5,
+    "marca": "Firestone",
+    "descripcion": "NEUMÁTICO FIRESTONE FIREHAWK 900 175/65R14",
+    "imagen": "https://monzza.com.ar/wp-content/uploads/2021/04/monzza-neumaticos-firestone-automovil-firehawk900-01.jpg",
+    "precio": "99.000",
+    "stock": 1,
+    "categoria": "cubierta"
+  },
+  {
+    "id": 6,
+    "marca": "Firestone",
+    "descripcion": "NEUMÁTICO FIRESTONE CV5000 225/70R15C",
+    "imagen": "https://monzza.com.ar/wp-content/uploads/2021/04/monzza-neumaticos-firestone-automovil-cv5000-03.jpg",
+    "precio": "82.000",
+    "stock": 3,
+    "categoria": "cubierta"
+  },
+  {
+    "id": 7,
+    "marca": "Michelin",
+    "descripcion": "215/55R17 94V PRIMACY 4+",
+    "imagen": "https://calzetta.com.ar/wp-content/uploads/2023/08/MICHELIN-PRIMACY-4-PLUS-1.jpg",
+    "precio": "89.500",
+    "stock": 5,
+    "categoria": "cubierta"
+  },
+  {
+    "id": 8,
+    "marca": "Moura",
+    "descripcion": "BATERIA MOURA 12X50 M18FD",
+    "imagen": "https://neumaticospons.com.ar/wp-content/uploads/2023/07/Diseno-sin-titulo-99.png",
+    "precio": "63.810",
+    "stock": 7,
+    "categoria": "bateria"
+  },
+  {
+    "id": 9,
+    "marca": "Moura",
+    "descripcion": "BATERIA MOURA 12X55 M22ED",
+    "imagen": "https://neumaticospons.com.ar/wp-content/uploads/2023/07/Diseno-sin-titulo-99.png",
+    "precio": "72.075",
+    "stock": 4,
+    "categoria": "bateria"
+  },
+  {
+    "id": 10,
+    "marca": "Moura",
+    "descripcion": "BATERIA MOURA 12X70 M26AD",
+    "imagen": "https://neumaticospons.com.ar/wp-content/uploads/2023/07/Diseno-sin-titulo-99.png",
+    "precio": 82332,
+    "stock": 8,
+    "categoria": "bateria"
+  },
+  {
+    "id": 11,
+    "marca": "Bosch",
+    "descripcion": "ESCOBILLAS LIMPIAPARABRISAS AEROTWIN CHEVROLET CORSA II",
+    "imagen": "https://neumaticospons.com.ar/wp-content/uploads/2022/04/escobillas-aerotwin-repuestodo-service.jpg",
+    "precio": "15.985",
+    "stock": 4,
+    "categoria": "accesorio"
+  },
+  {
+    "id": 12,
+    "marca": "Bosch",
+    "descripcion": "KIT DE ANTIRROBO TOYOTA COROLLA",
+    "imagen": "https://neumaticospons.com.ar/wp-content/uploads/2022/04/Diseno-sin-titulo-7.png",
+    "precio": "6.413",
+    "stock": 13,
+    "categoria": "accesorio"
+  },
+  {
+    "id": 13,
+    "marca": "Bosch",
+    "descripcion": "ESCOBILLAS LIMPIAPARABRISAS AEROTWIN CHEVROLET SPIN",
+    "imagen": "https://neumaticospons.com.ar/wp-content/uploads/2022/04/escobillas-aerotwin-repuestodo-service.jpg",
+    "precio": "17.571",
+    "stock": 3,
+    "categoria": "accesorio"
+  }
+]
