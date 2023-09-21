@@ -9,7 +9,7 @@ const ItemCount = ({ stockItems }) => {
   const incrementarStock = () => {
     console.log({ counter });
     console.log({ stock });
-    if (counter < stock) {
+    if (counter < stockItems) {
       setCounter(counter + 1);
     }
   };

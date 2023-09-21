@@ -8,6 +8,7 @@ import ComoComprar from "./Components/ComoComprar";
 import Ayuda from "./Components/Ayuda";
 import CartWidget from "./Components/CartWidget/CartWidget";
 import Error from "./Components/Error";
+
 import "./App.css";
 
 function App() {
