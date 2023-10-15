@@ -7,7 +7,7 @@ import {
   addDoc,
   updateDoc,
   doc,
-  getDoc,
+  getDoc
 } from "firebase/firestore";
 
 export const Checkout = () => {
@@ -20,7 +20,7 @@ export const Checkout = () => {
   const [ordenId, setOrdenId] = useState("");
   const [mensaje, setMensaje] = useState("");
 
-  const { cart, removeProduct, totalPrice } = useCartContext();
+  const { cart, removeProduct, precioTotal } = useCartContext();
 
   const manejadorFormulario = (event) => {
     event.preventDefault();
@@ -34,19 +34,19 @@ export const Checkout = () => {
       setError("Los campos de email no coinciden");
       return;
     }
-    const total = totalPrice();
+    const total = precioTotal();
     const orden = {
       items: cart.map((producto) => ({
         id: producto.id,
-        nombre: producto.descripcion,
-        cantidad: producto.cantidad,
+        descripcion: producto.descripcion,
+        cantidad: producto.cantidad
       })),
       total: total,
       fecha: new Date(),
       nombre,
       apellido,
       telefono,
-      email,
+      email
     };
 
     Promise.all(
@@ -58,7 +58,7 @@ export const Checkout = () => {
         const stockActual = productoDoc.data().stock;
 
         await updateDoc(productoRef, {
-          stock: stockActual - productoOrden.cantidad,
+          stock: stockActual - productoOrden.cantidad
         });
       })
     )
@@ -70,7 +70,7 @@ export const Checkout = () => {
             removeProduct();
           })
           .catch((error) => {
-            console.log("Error en creacon de orden", error);
+            console.log("Error en creacion de orden", error);
             setError("Error en orden");
           });
       })

@@ -17,7 +17,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      {/* <div className="App"> */}
       <BrowserRouter>
         <CartProvider>
           <NavBar />
@@ -27,7 +28,8 @@ function App() {
             <Route path={"/item/:id"} element={<ItemDetailContainer />} />
             <Route path={"/comoComprar"} element={<ComoComprar />} />
             <Route path={"/ayuda"} element={<Ayuda />} />
-            <Route path={"/cart"} element={<Checkout />} />
+            <Route path={"/cart"} element={<Cart />} />
+            <Route path={"/checkout"} element={<Checkout />} />
             <Route path={"*"} element={<Error404 />} />
           </Routes>
         </CartProvider>

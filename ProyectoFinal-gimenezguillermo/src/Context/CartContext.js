@@ -26,8 +26,8 @@ const CartProvider = ({ children }) => {
   };
 
   const totalProducts = () => {
-    cart.reduce(
-      (acumulador, productoActual) => acumulador + productoActual.quantity,
+    return cart.reduce(
+      (acumulador, productoActual) => acumulador + productoActual.cantidad,
       0
     );
   };
@@ -49,7 +49,7 @@ const CartProvider = ({ children }) => {
         addProduct,
         totalPrice,
         totalProducts,
-        cart
+        cart,
       }}
     >
       {children}
