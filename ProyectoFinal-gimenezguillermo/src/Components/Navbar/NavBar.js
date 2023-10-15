@@ -70,7 +70,7 @@ const NavBar = () => {
               </li>
             </ul>
 
-            <div className="col-6 d-flex justify-content-end align-items-center">
+            <div className="nav-item col-6 d-flex justify-content-end align-items-center">
               <Link to={"/cart"}>
                 <CartWidget />
               </Link>

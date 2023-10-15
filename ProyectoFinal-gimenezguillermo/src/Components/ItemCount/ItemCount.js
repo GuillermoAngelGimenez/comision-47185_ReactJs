@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ItemCount = ({ initial, stock, onAdd }) => {
   const [count, setCount] = useState(parseInt(initial));
@@ -33,7 +33,6 @@ const ItemCount = ({ initial, stock, onAdd }) => {
               -
             </button>
             <button type="button" className="btn btn-outline-primary">
-              {/* {counter} */}
               {count}
             </button>
             <button
@@ -49,7 +48,6 @@ const ItemCount = ({ initial, stock, onAdd }) => {
       </div>
       <div className="row justify-content-center mt-4">
         <div className="col">
-          {/* <button type="button" className="btn btn-outline-primary w-75"> */}
           <button
             className="btn btn-outline-primary w-75"
             disabled={stock <= 0}
@@ -59,9 +57,11 @@ const ItemCount = ({ initial, stock, onAdd }) => {
           </button>
         </div>
         <div className="col">
-          <button type="button" className="btn btn-secondary w-75">
-            Volver al inicio
-          </button>
+          <Link to={"/"}>
+            <button type="button" className="btn btn-outline-primary w-75">
+              Volver al inicio
+            </button>
+          </Link>
         </div>
       </div>
     </div>

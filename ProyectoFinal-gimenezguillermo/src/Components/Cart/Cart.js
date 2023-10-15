@@ -5,7 +5,7 @@ import ItemCart from "../ItemCart/ItemCart";
 import { getFirestore, addDoc, collection } from "firebase/firestore";
 
 const Cart = () => {
-  const { cart, precioTotal } = useCartContext();
+  const { cart, totalPrice } = useCartContext();
 
   const order = {
     buyer: {
@@ -20,7 +20,7 @@ const Cart = () => {
       precio: product.precio,
       cantidad: product.cantidad
     })),
-    total: precioTotal()
+    total: totalPrice()
   };
 
   const handleClick = () => {
@@ -43,7 +43,7 @@ const Cart = () => {
       {cart.map((product) => (
         <ItemCart key={product.id} product={product} />
       ))}
-      <p>Total: {precioTotal()}</p>
+      <p>Total: {totalPrice()}</p>
       <button onClick={handleClick}>Confirmar Compra</button>
     </>
   );
