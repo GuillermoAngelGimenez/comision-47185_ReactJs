@@ -1,0 +1,9 @@
+.detalle-item-padre{
+    border: 3px solid black;
+    border-radius: 1rem;
+    width: 31rem;
+    height: 50rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0rem;
+}

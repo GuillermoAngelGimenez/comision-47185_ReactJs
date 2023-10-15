@@ -1,0 +1,18 @@
+.card-esp{
+    margin: 10px;
+}
+
+.card-ind{
+    width: 18rem;
+    height: 25rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,107,158,1) 35%, rgba(0,212,255,1) 100%);
+    transition: transform 0.3s; 
+    transform-origin: center center;
+}
+
+.card-ind:hover {
+    /* width: 19rem;
+    height: 26rem; */
+    transform: scale(1.1);
+  }
