@@ -15,21 +15,23 @@ const ItemDetail = ({ item }) => {
   return (
     <div className="container detalle-item-padre">
       <div>
-        <img src={item.imagen} className="img-fluid" alt={item.marca} />
+        <img
+          src={item.imagen}
+          className="item-detail-imagen"
+          alt={item.marca}
+        />
         <h2>{item.marca}</h2>
-        <p>{item.descripcion}</p>
+        <p className="item-detail-descripcion">{item.descripcion}</p>
         <p>{item.año}</p>
         <p> $ {item.precio}</p>
         <p> Cantidad: {item.stock}</p>
       </div>
-      <div>
+      <div className="item-detail-terminar">
         {goToCart ? (
           <Link to="/cart">Terminar compra</Link>
         ) : (
           <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />
         )}
-
-        {/* <ItemCount stockItems={item.stock} /> */}
       </div>
     </div>
   );

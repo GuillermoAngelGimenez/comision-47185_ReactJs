@@ -1,9 +1,23 @@
 .detalle-item-padre{
     border: 3px solid black;
     border-radius: 1rem;
-    width: 31rem;
-    height: 50rem;
-    margin-top: 1rem;
+    width: 410px;
+    height: 650px;
     margin-bottom: 1rem;
     padding-bottom: 0rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.item-detail-imagen{
+    width: 330px;
+    height: 330px;
+}
+
+.item-detail-descripcion{
+    font-size: large;
+}
+
+.item-detail-terminar{
+    font-size: large;
 }

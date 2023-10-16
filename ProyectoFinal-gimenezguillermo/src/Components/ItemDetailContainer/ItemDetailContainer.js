@@ -5,7 +5,6 @@ import { getFirestore, doc, getDoc } from "firebase/firestore";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
-  // const [item, setItem] = useState([]);
   const [item, setItem] = useState([]);
   const { id } = useParams();
 

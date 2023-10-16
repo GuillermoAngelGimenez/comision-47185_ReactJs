@@ -10,7 +10,6 @@ import Ayuda from "./Components/Ayuda";
 
 import CartProvider from "./Context/CartContext";
 import Cart from "./Components/Cart/Cart";
-// import CartWidget from "./Components/CartWidget/CartWidget";
 import { Checkout } from "./Components/Checkout/Checkout";
 
 import "./App.css";

@@ -43,8 +43,23 @@ const Cart = () => {
       {cart.map((product) => (
         <ItemCart key={product.id} product={product} />
       ))}
-      <p>Total: {totalPrice()}</p>
-      <button onClick={handleClick}>Confirmar Compra</button>
+
+      <div className="detalle-total">
+        <div>
+          <p className="total-compra">
+            <b>Total: $ {totalPrice()} </b>
+          </p>
+        </div>
+
+        <div>
+          <button
+            className="btn btn-success boton-confirmar w-25"
+            onClick={handleClick}
+          >
+            Confirmar Compra
+          </button>
+        </div>
+      </div>
     </>
   );
 };

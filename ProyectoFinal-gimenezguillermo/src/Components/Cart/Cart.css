@@ -1,0 +1,17 @@
+.detalle-total{
+    margin-top: 3 rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 500px;
+}
+
+.total-compra{
+    font-size: 3rem;
+}
+
+.boton-confirmar{
+    width: 500px;
+}

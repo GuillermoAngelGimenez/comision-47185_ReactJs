@@ -12,7 +12,13 @@
 }
 
 .card-ind:hover {
-    /* width: 19rem;
-    height: 26rem; */
     transform: scale(1.1);
-  }
+}
+
+.card-body-img{
+    height: 290px;
+}
+
+.card-text-marca{
+    color: white;
+}
