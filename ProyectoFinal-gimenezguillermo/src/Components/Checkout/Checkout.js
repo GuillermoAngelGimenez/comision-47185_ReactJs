@@ -7,8 +7,10 @@ import {
   addDoc,
   updateDoc,
   doc,
-  getDoc,
+  getDoc
 } from "firebase/firestore";
+
+import "./Checkout.css";
 
 export const Checkout = () => {
   const [nombre, setNombre] = useState("");
@@ -18,7 +20,7 @@ export const Checkout = () => {
   const [emailConfirmacion, setEmailConfirmacion] = useState("");
   const [error, setError] = useState("");
   const [ordenId, setOrdenId] = useState("");
-  const [mensaje, setMensaje] = useState("");
+  // const [mensaje, setMensaje] = useState("");
 
   const { cart, removeProduct, totalPrice } = useCartContext();
 
@@ -31,22 +33,23 @@ export const Checkout = () => {
     }
 
     if (email !== emailConfirmacion) {
-      setError("Los campos de email no coinciden");
+      setError("Los corres ingresados no coinciden");
       return;
     }
+
     const total = totalPrice();
     const orden = {
       items: cart.map((producto) => ({
         id: producto.id,
         nombre: producto.descripcion,
-        cantidad: producto.cantidad,
+        cantidad: producto.cantidad
       })),
       total: total,
       fecha: new Date(),
       nombre,
       apellido,
       telefono,
-      email,
+      email
     };
 
     Promise.all(
@@ -58,7 +61,7 @@ export const Checkout = () => {
         const stockActual = productoDoc.data().stock;
 
         await updateDoc(productoRef, {
-          stock: stockActual - productoOrden.cantidad,
+          stock: stockActual - productoOrden.cantidad
         });
       })
     )
@@ -84,91 +87,112 @@ export const Checkout = () => {
     setTelefono("");
     setEmail("");
     setEmailConfirmacion("");
-    setMensaje("");
+    // setMensaje("");
   };
 
   return (
     <>
-      <h2 className="info">
-        Rellena el formulario y nos contactaremos para enviar sus productos
-      </h2>
+      <div className="form-envio">
+        <h2 className="info">
+          Rellena el formulario y nos contactaremos para enviar sus productos
+        </h2>
 
-      <form onSubmit={manejadorFormulario}>
-        {cart.map((producto) => (
-          <div className="item-check" key={producto.id}>
-            <p>
-              {" "}
-              {producto.descripcion} {producto.cantidad}
-            </p>
-            <p> {producto.precio} </p>
+        <form onSubmit={manejadorFormulario}>
+          <h4>Productos seleccionados:</h4>
+          {cart.map((producto) => (
+            <div className="item-check" key={producto.id}>
+              <div>
+                <ul>
+                  <li className="form-envio-seleccionados">
+                    <p>
+                      {"*** "}
+                      {producto.descripcion} * {producto.cantidad} unid.
+                    </p>
+                    <p>
+                      <b> {producto.precio} </b>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          ))}
+
+          <div className="form-group row">
+            <label className="lab-check col-sm-4 col-form-label">
+              Nombre:{" "}
+            </label>
+            <input
+              className="input-check col-sm-4"
+              type="text"
+              value={nombre}
+              onChange={(e) => setNombre(e.target.value)}
+            />
           </div>
-        ))}
 
-        <div className="form-group">
-          <label className="lab-check">Nombre</label>
-          <input
-            className="input-check"
-            type="text"
-            value={nombre}
-            onChange={(e) => setNombre(e.target.value)}
-          />
-        </div>
+          <div className="form-group row">
+            <label className="lab-check col-sm-4 col-form-label">
+              Apellido:{" "}
+            </label>
+            <input
+              className="input-check col-sm-4"
+              type="text"
+              value={apellido}
+              onChange={(e) => setApellido(e.target.value)}
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="lab-check">Apellido</label>
-          <input
-            className="input-check"
-            type="text"
-            value={apellido}
-            onChange={(e) => setApellido(e.target.value)}
-          />
-        </div>
+          <div className="form-group row">
+            <label className="lab-check col-sm-4 col-form-label">
+              Teléfono:{" "}
+            </label>
+            <input
+              className="input-check col-sm-4"
+              type="number"
+              value={telefono}
+              onChange={(e) => setTelefono(e.target.value)}
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="lab-check">Telefono</label>
-          <input
-            className="input-check"
-            type="number"
-            value={telefono}
-            onChange={(e) => setTelefono(e.target.value)}
-          />
-        </div>
+          <div className="form-group row">
+            <label className="lab-check col-sm-4 col-form-label">Email: </label>
+            <input
+              className="input-check col-sm-4"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="lab-check">Email</label>
-          <input
-            className="input-check"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
+          <div className="form-group row">
+            <label className="lab-check col-sm-4 col-form-label">
+              Email Confirmación:{" "}
+            </label>
+            <input
+              className="input-check col-sm-4"
+              type="email"
+              value={emailConfirmacion}
+              onChange={(e) => setEmailConfirmacion(e.target.value)}
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="lab-check">Email Confirmacion</label>
-          <input
-            className="input-check"
-            type="email"
-            value={emailConfirmacion}
-            onChange={(e) => setEmailConfirmacion(e.target.value)}
-          />
-        </div>
+          {error && <p className="error-campos">{error}</p>}
 
-        {error && <p className="error-campos">{error}</p>}
+          {ordenId && (
+            <p className="orden">
+              <b>
+                ¡Gracias por tu compra! <br /> Este es tu numero de orden:{" "}
+                <br /> {ordenId}{" "}
+              </b>
+            </p>
+          )}
 
-        {ordenId && (
-          <p className="orden">
-            ¡Gracias por tu compra! <br /> Este es tu numero de orden: <br />{" "}
-            {ordenId}{" "}
-          </p>
-        )}
-
-        <div className="checking">
-          <button className="check-bt" type="submit">
-            Finalizar Compra
-          </button>
-        </div>
-      </form>
+          <div className="checking">
+            <button className="check-bt btn btn-primary w-25" type="submit">
+              Finalizar Compra
+            </button>
+          </div>
+        </form>
+      </div>
     </>
   );
 };

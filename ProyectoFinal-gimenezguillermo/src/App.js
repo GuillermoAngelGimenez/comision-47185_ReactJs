@@ -10,14 +10,13 @@ import Ayuda from "./Components/Ayuda";
 
 import CartProvider from "./Context/CartContext";
 import Cart from "./Components/Cart/Cart";
-import { Checkout } from "./Components/Checkout/Checkout";
+import { Checkout } from "../src/Components/Checkout/Checkout";
 
 import "./App.css";
 
 function App() {
   return (
     <div>
-      {/* <div className="App"> */}
       <BrowserRouter>
         <CartProvider>
           <NavBar />
