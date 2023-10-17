@@ -1,7 +1,7 @@
 
 # E-Commerce de productos/accesorios de Autos.
 
-El E-Commerce desarrollado en el proyecto consiste en la comercialización(distribución y venta) de distintos productos/accesorios para vehiculos varios, tales como: cubiertas, baterias, y accesorios varios.
+El E-Commerce desarrollado en el proyecto final consiste en la comercialización(distribución y venta) de distintos productos/accesorios, tales como: cubiertas, baterias, y accesorios varios; para distintos vehiculos en cuanto a marca y modelo.
 Se eligió este proyecto por una cuestión de familiaridad con el rubro automotor y además lógicamente por gusto.
 
 
@@ -10,7 +10,7 @@ Se eligió este proyecto por una cuestión de familiaridad con el rubro automoto
 link del despliegue
 
 
-## Authors
+## Autor
 
 - [GuillermoAngelGimenez]( https://github.com/GuillermoAngelGimenez/comision-47185_ReactJs/tree/guille/ProyectoFinal-gimenezguillermo)
 
