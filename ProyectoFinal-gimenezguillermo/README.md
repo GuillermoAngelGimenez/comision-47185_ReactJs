@@ -9,6 +9,8 @@ Se eligió este proyecto por una cuestión de familiaridad con el rubro automoto
 
 https://e-commerce-ventadecubiertaseinsumosautos.vercel.app/
 
+![Alt text](image.png)
+
 
 ## Autor
 
