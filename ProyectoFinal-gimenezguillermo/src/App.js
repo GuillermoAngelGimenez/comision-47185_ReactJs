@@ -12,6 +12,9 @@ import CartProvider from "./Context/CartContext";
 import Cart from "./Components/Cart/Cart";
 import { Checkout } from "../src/Components/Checkout/Checkout";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import "./App.css";
 
 function App() {
@@ -30,6 +33,7 @@ function App() {
             <Route path={"/checkout"} element={<Checkout />} />
             <Route path={"*"} element={<Error404 />} />
           </Routes>
+          <ToastContainer />;
         </CartProvider>
       </BrowserRouter>
     </div>

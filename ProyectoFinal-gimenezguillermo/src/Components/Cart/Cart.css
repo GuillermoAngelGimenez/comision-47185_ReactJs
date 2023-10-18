@@ -1,17 +1,18 @@
+.info-carrito-vacio{
+    text-align: center;
+    margin-top: 5rem;
+    line-height: 3rem;
+    font-size: large;
+}
+
+.texto-carrito-vacio{
+    font-size: x-large ;
+}
+
 .detalle-total{
-    margin-top: 3 rem;
+    text-align: right;
+    padding-right: 10rem;
+    margin-top: 2rem;
+    font-size: 1.4rem ;
     margin-left: 10rem;
-    margin-right: 10rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    width: 500px;
-}
-
-.total-compra{
-    font-size: 3rem;
-}
-
-.boton-confirmar{
-    width: 500px;
 }

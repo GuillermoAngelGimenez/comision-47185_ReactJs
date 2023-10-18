@@ -4,12 +4,29 @@ import "./ItemDetail.css";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../Context/CartContext";
 
+import { toast } from "react-toastify";
+
 const ItemDetail = ({ item }) => {
   const [goToCart, setGoToCart] = useState(false);
   const { addProduct } = useCartContext();
   const onAdd = (cantidad) => {
     setGoToCart(true);
     addProduct(item, cantidad);
+
+    toast.success("Se agrego el producto al carrito", {
+      position: "bottom-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      style: {
+        background: "black",
+        color: "white"
+      }
+    });
   };
 
   return (

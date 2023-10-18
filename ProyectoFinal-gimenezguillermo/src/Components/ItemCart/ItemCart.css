@@ -2,12 +2,15 @@
     margin-top: 1rem;
     margin-left: 10rem;
     margin-right: 10rem;
-    /* height: 10rem; */
     border: 3px solid black;
     border-radius: 10px;
     padding: 15px;
-    background-color: rgb(162, 155, 155);
+    /* background-color: rgb(162, 155, 155); */
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    ;
     line-height: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .item-cart-img{
@@ -17,4 +20,10 @@
 
 .boton-eliminar{
     width: 200px;
+    color: white;
+    font-size: bold;
+}
+
+.boton-eliminar:hover{
+    color: red;
 }
