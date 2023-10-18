@@ -7,7 +7,7 @@ Se eligió este proyecto por una cuestión de familiaridad con el rubro automoto
 
 ## Despliegue
 
-link del despliegue
+https://e-commerce-ventadecubiertaseinsumosautos.vercel.app/
 
 
 ## Autor
