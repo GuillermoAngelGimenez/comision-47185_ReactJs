@@ -9,8 +9,8 @@ import {
   doc,
   getDoc
 } from "firebase/firestore";
-
 import "./Checkout.css";
+import MyModal from "../ModalCheckout/MyModal";
 
 export const Checkout = () => {
   const [nombre, setNombre] = useState("");
@@ -21,6 +21,8 @@ export const Checkout = () => {
   const [error, setError] = useState("");
   const [ordenId, setOrdenId] = useState("");
   // const [mensaje, setMensaje] = useState("");
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const { cart, removeProduct, totalPrice } = useCartContext();
 
@@ -33,7 +35,7 @@ export const Checkout = () => {
     }
 
     if (email !== emailConfirmacion) {
-      setError("Los corres ingresados no coinciden");
+      setError("Los correos ingresados no coinciden");
       return;
     }
 
@@ -109,7 +111,7 @@ export const Checkout = () => {
                       {producto.descripcion} * {producto.cantidad} unid.
                     </p>
                     <p>
-                      <b> {producto.precio} </b>
+                      <b>${producto.precio} </b> (precio unit.)
                     </p>
                   </li>
                 </ul>
@@ -178,16 +180,24 @@ export const Checkout = () => {
           {error && <p className="error-campos">{error}</p>}
 
           {ordenId && (
-            <p className="orden">
-              <b>
-                ¡Gracias por tu compra! <br /> Este es tu numero de orden:{" "}
-                <br /> {ordenId}{" "}
-              </b>
-            </p>
+            <MyModal isOpen={() => setIsOpen(true)}>
+              <h5>La operación se completo con éxito</h5>
+              <hr />
+              <p className="orden">
+                <b>
+                  ¡Gracias por tu compra! <br /> Este es tu numero de orden:{" "}
+                  <br /> {ordenId}{" "}
+                </b>
+              </p>
+            </MyModal>
           )}
 
           <div className="checking">
-            <button className="check-bt btn btn-primary w-25" type="submit">
+            <button
+              onClick={() => setIsOpen(true)}
+              className="check-bt btn btn-primary w-25"
+              type="submit"
+            >
               Finalizar Compra
             </button>
           </div>
