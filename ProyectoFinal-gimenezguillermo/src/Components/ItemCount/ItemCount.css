@@ -1,0 +1,11 @@
+.agregar-carrito:disabled{
+    background-color: rgba(184, 179, 179, 0.405);
+}
+
+.boton-decrementar:disabled{
+    background-color: rgba(184, 179, 179, 0.405);
+}
+
+.boton-incrementar:disabled{
+    background-color: rgba(184, 179, 179, 0.405);
+}

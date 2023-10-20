@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./ItemCount.css";
 
 const ItemCount = ({ initial, stock, onAdd }) => {
   const [count, setCount] = useState(parseInt(initial));
@@ -26,7 +27,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
           >
             <button
               type="button"
-              className="btn btn-outline-primary"
+              className="btn btn-outline-primary boton-decrementar"
               disabled={count <= 1}
               onClick={decrease}
             >
@@ -37,7 +38,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
             </button>
             <button
               type="button"
-              className="btn btn-outline-primary"
+              className="btn btn-outline-primary boton-incrementar"
               disabled={count >= stock}
               onClick={increase}
             >
@@ -50,8 +51,8 @@ const ItemCount = ({ initial, stock, onAdd }) => {
         <div className="col">
           <button
             id="agregar-producto"
-            className="btn btn-outline-primary w-100"
-            disabled={stock <= 0}
+            className="btn btn-outline-primary w-100 agregar-carrito"
+            disabled={stock <= 0 || count === 0}
             onClick={() => onAdd(count)}
           >
             Agregar al carrito
